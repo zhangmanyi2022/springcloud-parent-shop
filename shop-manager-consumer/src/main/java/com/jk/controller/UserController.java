@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 public class UserController {
 
-    @Autowired
+    @Autowired(required = true)
     private UserService userService;
 
     @RequestMapping("findAll")
